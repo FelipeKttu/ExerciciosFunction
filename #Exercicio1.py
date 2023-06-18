@@ -1,14 +1,16 @@
 #Exercicio1 
 '''Elaborar uma função (com retorno) que recebe como parâmetro um número inteiro
-e devolve o seu dobro.'''
+e devolve o seu dobrar.'''
 
-N1 = float(input('Digite o número:'))
+N = float(input('Digite o número:'))
 
-def dobro(N):
-    print('O número é {}'.format(N))
-    D = N1 * 2
-    print('O dobro é {}'.format(D))
-    return N1
+def dobrar(num):
+    print('O número é {}'.format(num))
 
-resultado = dobro(N1)
+    dobro = N * 2
+
+    print('O dobro é {}'.format(num))
+    return N
+
+resultado = dobrar(N)
 print(resultado)
