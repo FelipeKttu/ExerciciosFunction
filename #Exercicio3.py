@@ -4,12 +4,13 @@ o raio é passado por parâmetro.'''
 
 from math import pi
 
-def V(Raio):
-    VE = (4/3) * pi * (R ** 3)
-    print('O volume do raio {} é {:.2f}'.format(R,VE))
-    return Raio
+def V(raio):
+
+    volume_esfera = (4/3) * pi * (raio ** 3)
+    print('O volume do raio {} é {:.2f}'.format(raio, volume_esfera))
+    return raio
 
 
-R = float(input('Digite o Raio da esfera:'))
-resultado = V(R)
+raio = float(input('Digite o raio da esfera:'))
+resultado = V(raio)
 print(resultado)
