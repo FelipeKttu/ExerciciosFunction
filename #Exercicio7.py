@@ -2,27 +2,27 @@
 """Elaborar uma função (com retorno) que determina se um número passado como parâmetro é primo.
 A função quando chamada retorna 1 indicando que o número é primo e 0 caso contrário"""
 
-def pri(num):
-  CD = 0
-  C = 0
-  while C < N:
-    C += 1
-    if N % C == 0:
-      print('{} é divisivel por {}'.format(N,C))
-      CD += 1
-    else:
-      print('{} não é divisel por {}'.format(N,C))
+def primo(num):
+  vezes_divido = 0
+  cont = 0
 
-  if CD <= 2:
-    print('{} é primo !'.format(N))
+  while cont < num:
+
+    cont += 1
+    if num % cont == 0:
+      print('{} é divisivel por {}'.format(num, cont))
+      vezes_divido += 1
+    else:
+      print('{} não é divisel por {}'.format(num, cont))
+
+  if vezes_divido <= 2:
+    print('{} é primo !'.format(num))
     return 1
-  elif CD > 2:
-    print('{} não é primo !'.format(N))
+  
+  elif vezes_divido > 2:
+    print('{} não é primo !'.format(num))
     return 0
   
 
-N = float(input('Digite o número para verificar se é primo:'))
-print(pri(N))
-
-         
-       
+numero = float(input('Digite o número para verificar se é primo:'))
+print(primo(numero))
